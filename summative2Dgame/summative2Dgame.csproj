@@ -33,6 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="PresentationCore" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -44,13 +45,21 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Coin.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GameEndScreen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GameEndScreen.Designer.cs">
+      <DependentUpon>GameEndScreen.cs</DependentUpon>
     </Compile>
     <Compile Include="GameScreen.cs">
       <SubType>UserControl</SubType>
@@ -58,6 +67,13 @@
     <Compile Include="GameScreen.Designer.cs">
       <DependentUpon>GameScreen.cs</DependentUpon>
     </Compile>
+    <Compile Include="InstructionsScreen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InstructionsScreen.Designer.cs">
+      <DependentUpon>InstructionsScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lazar.cs" />
     <Compile Include="MenuScreen.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -70,8 +86,14 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GameEndScreen.resx">
+      <DependentUpon>GameEndScreen.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GameScreen.resx">
       <DependentUpon>GameScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InstructionsScreen.resx">
+      <DependentUpon>InstructionsScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuScreen.resx">
       <DependentUpon>MenuScreen.cs</DependentUpon>
@@ -101,6 +123,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\5f3dd7a408a3af34759ec630_5f34b527e68d1a595b24a0b1_uc.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lakeSound.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\goodCoin.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -121,4 +121,10 @@
   <data name="5f3dd7a408a3af34759ec630_5f34b527e68d1a595b24a0b1_uc" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\5f3dd7a408a3af34759ec630_5f34b527e68d1a595b24a0b1_uc.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="goodCoin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\goodCoin.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lakeSound" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lakeSound.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

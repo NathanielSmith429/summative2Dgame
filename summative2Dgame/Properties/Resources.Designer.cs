@@ -69,5 +69,23 @@ namespace summative2Dgame.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream goodCoin {
+            get {
+                return ResourceManager.GetStream("goodCoin", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream lakeSound {
+            get {
+                return ResourceManager.GetStream("lakeSound", resourceCulture);
+            }
+        }
     }
 }

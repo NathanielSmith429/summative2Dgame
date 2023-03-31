@@ -7,6 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
+using System;
+using System.Windows.Forms;
+using System.Media;
 
 namespace summative2Dgame
 {
@@ -15,7 +19,7 @@ namespace summative2Dgame
         public Form1()
         {
             InitializeComponent();
-            Form1.ChangeScreen(this, new MenuScreen());
+            ChangeScreen(this, new MenuScreen());
 
         }
 
@@ -31,7 +35,7 @@ namespace summative2Dgame
             {
                 UserControl current = (UserControl)sender;
                 f = current.FindForm();
-                f.Controls.Remove(current);
+                f.Controls.Remove(current); // THIS LINE HAS ERROR
             }
 
             next.Location = new Point((f.ClientSize.Width - next.Width) / 2,
@@ -41,9 +45,6 @@ namespace summative2Dgame
             next.Focus();
         }
 
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-
-        }
+       
     }
 }
