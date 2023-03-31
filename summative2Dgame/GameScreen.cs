@@ -25,7 +25,7 @@ namespace summative2Dgame
         Random randGen = new Random();
 
         // this messes with the screeen
-        //System.Windows.Media.MediaPlayer goodCoin = new System.Windows.Media.MediaPlayer(); 
+        //System.Windows.Media.MediaPlayer goodCoin = new System.Windows.Media.MediaPlayer(); using this offsets the screen
 
         Coin coin;
         Lazar funLazar;
