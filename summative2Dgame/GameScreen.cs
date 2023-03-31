@@ -43,7 +43,7 @@ namespace summative2Dgame
         int livesNumber;
 
         Boolean leftArrowDown, rightArrowDown, upArrowDown, downArrowDown;
-        bool isInAir = false;
+        bool isInAir = false; 
 
          Rectangle floor = new Rectangle(0, 583, 1080, 50);
 
